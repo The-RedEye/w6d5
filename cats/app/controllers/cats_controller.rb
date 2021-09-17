@@ -8,11 +8,10 @@ class CatsController < ApplicationController
 
       def show
          @cat = Cat.find_by(id: params[:id])
-         redirect_to cats_url(@cat)
+         render :show
       end
 
       def new
-         @cat = Cat.new
          render :new
       end
 

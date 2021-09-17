@@ -24,7 +24,7 @@ class Cat < ApplicationRecord
     validates :color, inclusion: {in: VALID_COLORS}
 
     # def age 
-    #     age = Time.current - :birth_date
+    #     age = Time.current - self.birth_date
     # end
 
 end
